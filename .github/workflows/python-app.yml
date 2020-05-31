@@ -27,4 +27,9 @@ jobs:
     - name: build with pyinstaller
       run: |
         pipenv shell
-        pyinstaller analyse_directory.py
+        pyinstaller --onefile analyse_directory.py --clean --hidden-import=pkg_resources.py2_warn
+    - name: Upload executable
+      uses: actions/upload-artifact@v1
+      with:
+        name: analyse_directory
+        path: dist/analyse_directory.exe

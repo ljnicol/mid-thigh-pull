@@ -4,3 +4,5 @@
 data/*
 output/*
 *.csv
+build/*
+__pycache__/*
