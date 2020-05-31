@@ -26,4 +26,5 @@ jobs:
         pipenv install
     - name: build with pyinstaller
       run: |
+        pipenv shell
         pyinstaller analyse_directory.py
