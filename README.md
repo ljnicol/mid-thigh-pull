@@ -1,5 +1,5 @@
 # mid-thigh-pull
-![Windows Executable](https://github.com/ljnicol/mid-thigh-pull/workflows/Windows%Executable/badge.svg)
+![Windows Executable](https://github.com/ljnicol/mid-thigh-pull/workflows/Windows%20Executable/badge.svg)
 
 Quickly get the maximum force and maximum force gradient in a mid-thigh pull test.
 
