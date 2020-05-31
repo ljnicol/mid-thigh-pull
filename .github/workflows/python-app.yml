@@ -24,10 +24,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv install
-    - name: build with pyinstaller
-      run: |
-        pipenv shell
-        pyinstaller --onefile analyse_directory.py --clean --hidden-import=pkg_resources.py2_warn
+    - name: Test
+      uses: VaultVulp/action-pipenv@v2.0.1
+      with:
+        command: run build # Run custom `test` command defined in the `[scripts]` block of Pipfile
     - name: Upload executable
       uses: actions/upload-artifact@v1
       with:
